@@ -1,0 +1,274 @@
+/* pc */
+@media(min-width:1024px){
+    .hide-on-pc{
+        display: none;
+    }
+    #nav-on-tablet-mobile{
+        display: none;
+    }
+}
+/* tren tablet va mobile*/
+@media (max-width:1024px){
+    *{
+    -webkit-tap-highlight-color: transparent;
+
+    }
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    #header{
+        display: block;
+    }
+    .header-logo{
+        margin-left: 20px;
+        display: block;
+        
+    }
+    #nav{
+        display: none;
+    }
+    #slider{
+        width: 100%;
+        margin: 0;
+    }
+    .about{
+        margin: unset;
+    }
+  
+    .about-restaurant{
+        height: 440px;
+    }
+    .menu{
+        margin: unset;
+    }
+    /* nav tren tablet va mobile */
+    .side-bar{
+        /* background-color:#fff; */
+        background-color: rgba(57,34,28,1);
+        background-color: rgba(33,33,33,0.9);
+        width: 300px;
+        /* background-image: linear-gradient( rgb(254, 172, 94, 0.2), rgb(199, 121, 208, 0.4), rgb(75, 192, 200, 0.4)); */
+        background-image: linear-gradient(rgba(33,33,33,0.8),rgba(33,33,33,0.6),rgba(33,33,33,0.4));
+
+        position: fixed;
+        top: 0;
+        right: 0%;
+        bottom: 0;
+        transform: translateX(100%);
+        transition: transform linear 0.4s;
+        z-index: 1;
+        /* overflow: auto; */
+        overflow: hidden;
+        padding: 0 15px;
+        border-left: 1px solid #dadada;
+        list-style-type: none;
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0,0.3);
+        animation: fade 0.3s linear;
+        display: none;
+    }
+    .checkbox:checked ~ .side-bar{
+        transform: translateX(0);
+    }
+    .checkbox:checked ~ .overlay{
+        display: block;
+    }
+    .side-bar__item{
+        position: relative;
+        border-bottom: 1px solid #e9e9e9;
+    }
+    .side-bar__item:hover > a{
+        color: #000;
+        background-color: rgba(255,255,255,1);
+        border-radius: 3px;
+        box-shadow:   0px 2px 5px #f1f1f1;
+
+    }
+    
+    
+    .side-bar-close{
+        font-size: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #fff;
+    }
+    .side-bar__item > a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #e3e2e3;
+        line-height: 60px;
+        display: block;
+        padding: 0 22px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .side-bar-subnav__item:hover{
+        background-color: rgba(255,255,255,1);
+        border-radius: 3px;
+        box-shadow:   0px 2px 5px #f1f1f1;
+    }
+    .side-bar-subnav__item:hover a{
+        color: #000;
+    }
+
+    .side-bar-subnav{
+        display: none;
+        list-style-type: none;
+        padding-left: 20px;
+        width: 330px;
+        animation: fade 1s linear;
+    }
+    .side-bar-subnav__item{
+        border-top: 1px solid rgba(255,255,255,0.6);
+        margin-right: 130px;
+        padding-left: 20px;
+    }
+    .side-bar-subnav__item a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #e3e2e3;
+        line-height: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+    }
+    .side-bar-subnav__item:hover a{
+        transform: scale(1.02);
+    }
+    .check-sub:checked ~ .side-bar-subnav{
+        display: block;
+    }
+    @keyframes fade {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    /* silder */
+    img{
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+    }
+    .title{
+        top: 300px;
+        text-align: center;
+    } 
+    .mt-24{
+        margin-top: 24px;
+    }
+    
+}
+
+  
+/* tablet */
+@media (min-width:740px) and (max-width:1024px){
+    .hide-on-tablet{
+        display: none;
+    }    
+    .about {
+        padding-top:570px;
+    }
+    .title{
+        top: 70%;
+        text-shadow: 2px 2px #646060;
+    }
+    
+}
+/* mobile */
+@media (max-width:739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .title{
+        top: 47%;
+    }
+    .side-bar{
+        width: 250px;
+    }
+    /* about logo */
+    .about-logo{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 45px;
+    }
+    .about-logo__item{
+        width: 50%;
+    }
+    .about{
+        padding-top: 460px;
+    }
+    .about-heading{
+        font-size: 26px;
+        /* padding-top:390px; */
+
+    }
+    .about-title{
+        font-size: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+    }
+    .about-restaurant{
+        height: 520px;
+    }
+    .about-restaurant__heading{
+        font-size: 26px;
+        padding-top: 50px;
+        font-family: Oswald,sans-serif;
+    }
+    .about-restaurant__title{
+        font-size: 16px;
+        padding-top: 8px;
+    }
+    .mt-24-mb{
+        margin-top: 24px;
+    }
+    .mt-30{
+        margin-top: 30px;
+    }
+    
+    .menu-heading{
+        text-shadow: 2px 2px #c2a1a1;
+        font-size: 26px;
+        padding-bottom: 4px;
+    }
+    .menu-title{
+        text-shadow: 2px 2px rgb(134, 108, 108);
+        font-size: 16px;
+        /* padding-bottom: 30px; */
+    }
+    .menu-list{
+        padding:0 20px ;
+    }
+    .product{
+        padding: 0 30px;
+    }
+    .product-item{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .product-item img{
+        width: 100%;
+    }
+    .product-item__price{
+        margin-top: 0;
+    }
+    .product-title{
+        padding-top: 50px;
+    }
+}

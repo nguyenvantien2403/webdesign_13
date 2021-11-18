@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+        <link rel="stylesheet" href="./assets/css/grid.css"> 
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./menu/Cake1/cake.css">
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" /> -->
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <a href="" class="header-logo">
+                <img src="assets/img/header/logo_white-7.png" alt="">
+            </a>
+            <ul id="nav">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item">
+                    <a href="#menu">
+                        Menu
+                        <!-- <i class="nav-arrow-down ti-angle-down"></i></a> -->
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <ul class="subnav">
+                            <li><a href="menu/cake/menu_cake.html">Coffee</a></li>
+                            <li><a href="menu/Cake1/cake.html">Cakes</a></li>
+                            <li><a href="menu/fruit/menu_fruit.html">Fruits</a></li>
+                        </ul>
+                </li>
+                <li class="nav-item"><a href="#container">Specialities</a></li>
+                <li class="nav-item"><a href="#footer">Contact</a></li>
+                <li class="nav-item"><a href="Sign Up/signup.html">sign up</a></li>
+                <li class="nav-item"><a href="Log In/index.html">log in</a></li>
+
+
+
+            </ul>
+
+            <label for="check" class="menu-icon hide-on-pc">
+                <i class="menu-icon-bar fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <input type="checkbox" id="check" class="checkbox" hidden>
+            <!-- nav tren tablet and mobile -->
+            <ul class="side-bar hide-on-pc">
+                <li class="side-bar__item">
+                    <a href="index.html">Home
+                        <label class="side-bar-close" for="check">
+                            <i class="fa fa-times-circle" aria-hidden="true"></i>
+                        </label>
+                    </a>
+                </li>
+                <li class="side-bar__item"><a href="">About</a></li>
+                <li class="side-bar__item">
+                    <a href="#">
+                        <label for="check-sub">
+                            <!-- <a href="#"> -->
+                            Menu
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <!-- </a> -->
+                        </label>
+                    </a>
+                    <input type="checkbox" id="check-sub" hidden class="check-sub">
+                    <ul href="#" class="side-bar-subnav">
+                        <li class="side-bar-subnav__item"><a href="menu/cake/menu_cake.html">Coffee</a></li>
+                        <li class="side-bar-subnav__item"><a href="menu/Cake1/cake.html">Cakes</a></li>
+                        <li class="side-bar-subnav__item"><a href="menu/fruit/menu_fruit.html">Fruits</a></li>
+                    </ul>
+                    <div class="box"></div>
+                </li>
+                <li class="side-bar__item"><a href="#container">Specialities</a></li>
+                <li class="side-bar__item"><a href="#footer">Contact</a></li>
+                <li class="nav-item"><a href="Sign Up/signup.html">sign up</a></li>
+                <li class="nav-item"><a href="Log In/">log in</a></li>
+
+            </ul>
+            <label for="check" class="overlay"></label>
+        </div>
+        <div id="slider">
+            <figure>
+                <div class="slide">
+                    <h1 class="title">COME HERE WITH US</h1>
+                    <img src="./assets/img/slider/home-3-slider-image-1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/slider/home-1-slider-image-1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/slider/home-2-slider-image-1a.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/slider/slideshow-v1.jpg" alt="">
+                </div>
+            </figure>
+        </div>
+        <div id="content" >
+            <div class="about">
+                
+                <div class="grid wide " id="about" >
+                    <h1 class="text-heading text-center about-heading">About Us</h1>
+                    <h2 class="text-title text-center about-title">CAFE & RESTAURANT</h2>
+                    <p class="about-des">
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse varius enim in eros
+                        elementum tristique. Duis
+                        cursus, mi quis viverra ornare, <br> eros dolor interdum nulla, ut commodo diam libero vitae
+                        erat.Aenean faucibus
+                        <br> nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    </p>
+
+                    <div class="background"></div>
+                </div>
+            </div>
+            <div class="about-restaurant" >
+                <h2 class="text-heading text-center about-restaurant__heading">DID YOU KNOW?</h2>
+                <h3 class="text-title text-center about-restaurant__title">ABOUT OUR RESTAURANT:</h3>
+                <ul class="about-logo">
+                    <li class="about-logo__item">
+                        <img src="assets/img/content/icon1.png" alt="">
+                        <span class="about-logo__item-content">FAMOUS FOR <br>OUR COFFEE</span>
+                    </li>
+                    <li class="about-logo__item">
+                        <img src="assets/img/content/icon2.png" alt="">
+                        <span class="about-logo__item-content">PHONE<br>RESERVATIONS</span>
+
+                    </li>
+                    <li class="about-logo__item mt-30">
+                        <img src="assets/img/content/icon3.png" alt="">
+                        <span class="about-logo__item-content">OPEN EVERYDAY <br>08:00 - 01:00</span>
+                    </li>
+                    <li class="about-logo__item mt-30">
+                        <img src="assets/img/content/icon4.png" alt="">
+                        <span class="about-logo__item-content">LOCATED IN <br>CITY CENTER</span>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="menu" id="menu">
+                <div class="grid wide ">
+                    <h2 class="text-heading text-center menu-heading">OUR MENU</h2>
+                    <h3 class="text-title text-center menu-title">THESE ARE OUR SPECIALS:</h3>
+                    <div class="row">
+                        <div class="col l-6 m-12 c-12">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <img src="assets/img/menu/h-1-list-icon-img-10-150x150.jpg" alt="">
+                                    <div class="menu-item__info">
+                                        <p class="menu-item__info-head">Single Cup Brew</p>
+                                        <p class="menu-item__info-body">Lorem ipsum dolor sit amet consectetur
+                                            adipiscing</p>
+                                    </div>
+                                    <span class="menu-item__price">4.55$</span>
+                                </li>
+                                <li class="menu-item">
+                                    <img src="assets/img/menu/h-1-list-icon-img-11-150x150.jpg" alt="">
+                                    <div class="menu-item__info">
+                                        <p class="menu-item__info-head">Single Cup Brew</p>
+                                        <p class="menu-item__info-body">Lorem ipsum dolor sit amet consectetur
+                                            adipiscing</p>
+                                    </div>
+                                    <span class="menu-item__price">4.55$</span>
+                                </li>
+                                <li class="menu-item">
+                                    <img src="assets/img/menu/h-1-list-icon-img-150x150.jpg" alt="">
+                                    <div class="menu-item__info">
+                                        <p class="menu-item__info-head">Single Cup Brew</p>
+                                        <p class="menu-item__info-body">Lorem ipsum dolor sit amet consectetur
+                                            adipiscing</p>
+                                    </div>
+                                    <span class="menu-item__price">4.55$</span>
+                                </li>
+                                <li class="menu-item">
+                                    <img src="assets/img/menu/h-1-list-icon-img-2-150x150.jpg" alt="">
+                                    <div class="menu-item__info">
+                                        <p class="menu-item__info-head">Single Cup Brew</p>
+                                        <p class="menu-item__info-body">Lorem ipsum dolor sit amet consectetur
+                                            adipiscing</p>
+                                    </div>
+                                    <span class="menu-item__price">4.55$</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <img src="assets/img/menu/h-1-list-icon-img-3-150x150.jpg" alt="">
+                                    <div class="menu-item__info">
+                                        <p class="menu-item__info-head">Single Cup Brew</p>
+                                        <p class="menu-item__info-body">Lorem ipsum dolor sit amet consectetur
+                                            adipiscing</p>
+                                    </div>
+                                    <span class="menu-item__price">4.55$</span>
+                                </li>
+                                <li class="menu-item">
+                                    <img src="assets/img/menu/h-1-list-icon-img-4-150x150.jpg" alt="">
+                                    <div class="menu-item__info">
+                                        <p class="menu-item__info-head">Single Cup Brew</p>
+                                        <p class="menu-item__info-body">Lorem ipsum dolor sit amet consectetur
+                                            adipiscing</p>
+                                    </div>
+                                    <span class="menu-item__price">4.55$</span>
+                                </li>
+                                <li class="menu-item">
+                                    <img src="assets/img/menu/h-1-list-icon-img-6-150x150.jpg" alt="">
+                                    <div class="menu-item__info">
+                                        <p class="menu-item__info-head">Single Cup Brew</p>
+                                        <p class="menu-item__info-body">Lorem ipsum dolor sit amet consectetur
+                                            adipiscing</p>
+                                    </div>
+                                    <span class="menu-item__price">4.55$</span>
+                                </li>
+                                <li class="menu-item">
+                                    <img src="assets/img/menu/h-1-list-icon-img-7-150x150.jpg" alt="">
+                                    <div class="menu-item__info">
+                                        <p class="menu-item__info-head">Single Cup Brew</p>
+                                        <p class="menu-item__info-body">Lorem ipsum dolor sit amet consectetur
+                                            adipiscing</p>
+                                    </div>
+                                    <span class="menu-item__price">4.55$</span>
+                                </li>
+                            </ul>
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="demo-menu">
+                            <span>Specialities</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="menu-cafe">
+                            <i class="ti-heart icon-heart"></i>
+                            <i class="ti-eye icon-eye"></i>
+                            <div class="img-menu-cafe">
+                                <!-- <img src="./photo/Banh Dau.jpg" alt=""> -->
+                                <img src="./menu/cake/Photo/imgFinal1.jpg" alt="">
+                            </div>
+                            <div class="content-menu-cafe">
+                                <div class="name-Cafe">
+                                    <span>Espresso</span>
+                                </div>
+                                <div class="infor-cafe">
+                                    <div class="price-Cafe">
+                                        <span>1.500$</span>
+                                    </div>
+                                    <div class="Buy-Cafe">
+                                        <button >Add to Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="menu-cafe">
+                            <i class="ti-heart icon-heart"></i>
+                            <i class="ti-eye icon-eye"></i>
+                            <div class="img-menu-cafe">
+                                <!-- <img src="./photo/Banh Dau.jpg" alt=""> -->
+                                <img src="/menu/cake/Photo/imgFinal2.jpg" alt="">
+                            </div>
+                            <div class="content-menu-cafe">
+                                <div class="name-Cafe">
+                                    <span>Macchiato</span>
+                                </div>
+                                <div class="infor-cafe">
+                                    <div class="price-Cafe">
+                                        <span>1.500$</span>
+                                    </div>
+                                    <div class="Buy-Cafe">
+                                        <button >Add to Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="menu-cafe">
+                            <i class="ti-heart icon-heart"></i>
+                            <i class="ti-eye icon-eye"></i>
+                            <div class="img-menu-cafe">
+                                <!-- <img src="./photo/Banh Dau.jpg" alt=""> -->
+                                <img src="./menu/cake/Photo/imgFinal3.jpg" alt="">
+                            </div>
+                            <div class="content-menu-cafe">
+                                <div class="name-Cafe">
+                                    <span>Americano</span>
+                                </div>
+                                <div class="infor-cafe">
+                                    <div class="price-Cafe">
+                                        <span>1.500$</span>
+                                    </div>
+                                    <div class="Buy-Cafe">
+                                        <button >Add to Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+                        <div class="view-all">
+                            <a href="./menu/cake/menu_cake.html">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="menu-cafe">
+                            <a href="#"><i class="ti-heart icon-heart"></i></a>
+                            <a href="#"><i class="ti-eye icon-eye"></i></a>
+                            <div class="img-menu-cafe">
+                                <!-- <img src="./photo/Banh Dau.jpg" alt=""> -->
+                                <img src="./menu/Cake1/photo/Chocolate Coffee.jpg" alt="">
+                            </div>
+                            <div class="content-menu-cafe">
+                                <div class="name-Cafe">
+                                    <span>Bánh Dâu</span>
+                                </div>
+                                <div class="infor-cafe">
+                                    <div class="price-Cafe">
+                                        <span>1.500$</span>
+                                    </div>
+                                    <div class="Buy-Cafe">
+                                        <button >Add to Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="menu-cafe">
+                            <a href="#"><i class="ti-heart icon-heart"></i></a>
+                            <a href="#"><i class="ti-eye icon-eye"></i></a>
+                            <div class="img-menu-cafe">
+                                <!-- <img src="./photo/Banh Dau.jpg" alt=""> -->
+                                <img src="./menu/Cake1/photo/Cononut Pandan cake.jpg" alt="">
+                            </div>
+                            <div class="content-menu-cafe">
+                                <div class="name-Cafe">
+                                    <span>Chocolate Coffee</span>
+                                </div>
+                                <div class="infor-cafe">
+                                    <div class="price-Cafe">
+                                        <span>1.500$</span>
+                                    </div>
+                                    <div class="Buy-Cafe">
+                                        <button >Add to Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="menu-cafe">
+                            <a href="#"><i class="ti-heart icon-heart"></i></a>
+                            <a href="#"><i class="ti-eye icon-eye"></i></a>
+                            <div class="img-menu-cafe">
+                                <!-- <img src="./photo/Banh Dau.jpg" alt=""> -->
+                                <img src="./menu/Cake1/photo/Chocolate mousse cake.jpg" alt="">
+                            </div>
+                            <div class="content-menu-cafe">
+                                <div class="name-Cafe">
+                                    <span>Bánh Trà Xanh</span>
+                                </div>
+                                <div class="infor-cafe">
+                                    <div class="price-Cafe">
+                                        <span>1.500$</span>
+                                    </div>
+                                    <div class="Buy-Cafe">
+                                        <button >Add to Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+                        <div class="view-all">
+                            <a href="./menu/Cake1/cake.html">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+    
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="menu-cafe">
+                            <i class="ti-heart icon-heart"></i>
+                            <i class="ti-eye icon-eye"></i>
+                            <div class="img-menu-cafe">
+                                <!-- <img src="./photo/Banh Dau.jpg" alt=""> -->
+                                <img src="./menu/fruit/photo/Cam.jpg" alt="">
+                            </div>
+                            <div class="content-menu-cafe">
+                                <div class="name-Cafe">
+                                    <span>Nước ép cam</span>
+                                </div>
+                                <div class="infor-cafe">
+                                    <div class="price-Cafe">
+                                        <span>1.500$</span>
+                                    </div>
+                                    <div class="Buy-Cafe">
+                                        <button >Add to Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="menu-cafe">
+                            <i class="ti-heart icon-heart"></i>
+                            <i class="ti-eye icon-eye"></i>
+                            <div class="img-menu-cafe">
+                                <!-- <img src="./photo/Banh Dau.jpg" alt=""> -->
+                                <img src="./menu/fruit/photo/Chanh.jpg" alt="">
+                            </div>
+                            <div class="content-menu-cafe">
+                                <div class="name-Cafe">
+                                    <span>Chanh muối</span>
+                                </div>
+                                <div class="infor-cafe">
+                                    <div class="price-Cafe">
+                                        <span>1.500$</span>
+                                    </div>
+                                    <div class="Buy-Cafe">
+                                        <button >Add to Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="menu-cafe">
+                            <i class="ti-heart icon-heart"></i>
+                            <i class="ti-eye icon-eye"></i>
+                            <div class="img-menu-cafe">
+                                <!-- <img src="./photo/Banh Dau.jpg" alt=""> -->
+                                <img src="./menu/fruit/photo/Dau (1).jpg" alt="">
+                            </div>
+                            <div class="content-menu-cafe">
+                                <div class="name-Cafe">
+                                    <span>Sinh tố dâu</span>
+                                </div>
+                                <div class="infor-cafe">
+                                    <div class="price-Cafe">
+                                        <span>1.500$</span>
+                                    </div>
+                                    <div class="Buy-Cafe">
+                                        <button >Add to Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+                        <div class="view-all">
+                            <a href="./menu/fruit/menu_fruit.html">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer-bottom-area bg-dark-light section-padding-sm footer " id="footer">
+        <div class="row widgets footer-widgets">
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-widget widget-about">
+                    <h5 class="widget-title">About Us</h5>
+                    <img src="assets/img/header/logo_white-7.png" alt="">
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-widget widget-quick-links">
+                    <h5 class="widget-title">My Account</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-widget widget-quick-sevices">
+                    <h5 class="widget-title">Sevices</h5>
+                    <ul>
+                        <li><a href="#">Oursourcing</a></li>
+                        <li><a href="#">Website development</a></li>
+                        <li><a href="#">Mobile applocations</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-widget widget-contact">
+                    <h5 class="widget-title">Contact Us</h5>
+                    <ul>
+                        <li class="address">
+                            <span class="icon"><i class="fa fa-map-marker"></i></span>
+                            <p>Address : 3 Cau Giay, Lang Thuong, Dong Da, Ha Noi</p>
+                        </li>
+                        <li class="phone">
+                            <span class="icon"><i class="fa fa-phone"></i></span>
+                            <p><a href="#">+84 398 418 906</a></p>
+                        </li>
+                        <li class="fax">
+                            <span class="icon"><i class="fa fa-fax"></i></span>
+                            <p><a href="#">+84 398 418 906</a></p>
+                        </li>
+                        <li class="email">
+                            <span class="icon"><i class="fa fa-envelope-o"></i></span>
+                            <p><a href="#">trduchuu10@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+</div>
+</body>
+
+</html>

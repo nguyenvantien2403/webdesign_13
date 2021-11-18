@@ -1,0 +1,171 @@
+
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<title>Đăng ký tài khoản</title>
+	<script>
+		var check_phone = /^\(\d{2,4}\)[\s\.-]\d{3}[\s\.-]\d{3}$/;
+		var check_email = /^([\w-]+(\?\:\.[\w-]+)*)@((\?\:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(\?\:\.[a-z]{2})?)$/;
+		var check_fullname = /^[A-Za-z0-9_]{1,20}$/;
+		var check_username = /^[A-Za-z0-9_]{1,20}$/;
+		var check_pass = /^[A-Za-z0-9_]{1,20}$/;
+		var check_repass = /^[A-Za-z0-9_]{1,20}$/;
+		var check_pass = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
+		function checknull(txt){
+			if(txt.value.length==0)
+				return true;
+			else	
+				return false;
+		}
+		function notCheck(radio){
+			var rt=true;
+			for(i=0;i<radio.length;i++)
+				if(radio[i].checked)
+					rt=false;
+				return rt;
+		}
+		function StringMatch(txt,reg){
+			return reg.test(txt.value);
+		}
+		function validform(f){
+			if(checknull(f.fullname)){
+				alert(f.fullname.name+ " must be not full ");
+				f.fullname.focus();
+				return;
+			}
+			if(checknull(f.username)){
+				alert(f.username.name+ " must be not full ");
+				f.username.focus();
+				return;
+			}
+			if(checknull(f.pass)){
+				alert(f.pass.name+ " must be not full ");
+				f.pass.focus();
+				return;
+			}
+			if(checknull(f.repass)){
+				alert(f.repass.name+ " must be not full ");
+				f.repass.focus();
+				return;
+			}
+			if(notCheck(f.gender)){
+				alert("Gender must be choosen");
+				return;
+			}
+			if(!StringMatch(f.email, check_email)){
+				alert("Email is not valid");
+				f.email.value="";
+				f.email.focus();
+				return;
+			}
+			if(!StringMatch(f.phone, check_phone)){
+				alert("Phone is not valid");
+				f.phone.value="";
+				f.phone.focus();
+				return;
+			}
+			alert("All fields are valid!!!");
+		}
+	</script>
+	<style type="text/css">
+		body{
+			background-image: url(nen6.jpg);
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<table align="center">
+		<form name="frmAccount" action="abc.jsp">
+		<tr>
+			<th colspan="2">Sign Up</th>
+		</tr>
+		<tr>
+			<td>Full Name</td>
+			<td>
+				<input type="text" name="fullname" size="30" placeholder="Nhập họ tên">
+			</td>
+		</tr>
+		<tr>
+			<td>User Name</td>
+			<td>
+				<input type="text" name="username" size="30" placeholder="Nhập tên tài khoản">
+			</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>
+				<input type="text" name="pass" size="30" placeholder="Nhập mật khẩu">
+			</td>
+		</tr>
+		<tr>
+			<td>Confirm Password</td>
+			<td>
+				<input type="text" name="repass" size="30" placeholder="Nhập lại mật khẩu">
+			</td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td>
+				<label>
+					<input type="radio" name="gender" id="Nam">Nam
+				</label>
+				<label>
+					<input type="radio" name="gender" id="Nữ">Nữ
+				</label>
+			</td>
+		</tr>
+		<tr>
+			<td>Date Of Birth</td>
+			<td>
+				<select name="day">
+					<option value="Ngay1">Ngày 1</option>
+					<option value="Ngay2">Ngày 2</option>
+					<option value="Ngay3">Ngày 3</option>
+				</select>
+				<select name="month">
+					<option value="thang1">Tháng 1</option>
+					<option value="thang2">Tháng 2</option>
+					<option value="thang3">Tháng 3</option>
+				</select>
+				<select name="year">
+					<option value="nam2000">Năm 2002</option>
+					<option value="nam2001">Năm 2001</option>
+					<option value="name2000">Năm 2000</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td>
+				<input type="text" name="email" size="30" placeholder="Nhập  Email">
+			</td>
+		</tr>
+		<tr>
+			<td>Phone</td>
+			<td>
+				<input type="text" name="phone" size="30" placeholder="Nhập số điện thoại">
+			</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td>
+				<input type="text" size="30" placeholder="Nhập địa chỉ">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="button" value="Sign Up" onclick="validform(document.forms.frmAccount);">
+				<input type="Reset" value="Reset">
+			</td>
+		</tr>
+	</form>
+	</table>
+</body>
+</html>

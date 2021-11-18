@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECEAE3;
+}
+
+.about-cafe {
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px 0 50px 0px;
+}
+
+.about-cafe span {
+    font-size: 50px;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+}
+
+.about-cafe p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #ad3c42;
+}
+
+.menu-cafe {
+    height: auto;
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.menu-cafe:hover {
+    transform: scale(0.95);
+}
+
+.img-menu-cafe {
+    display: flex;
+    justify-content: center;
+}
+
+.img-menu-cafe {
+    padding: 12px 0 0 0;
+}
+
+.img-menu-cafe img {
+    width: 90%;
+    border-radius: 5px;
+    height: auto;
+}
+
+.content-menu-cafe {
+    font-weight: 700;
+    color: #1B1B1B;
+}
+
+.name-Cafe {
+    margin: 15px 0 0 30px;
+}
+
+.name-Cafe span {
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+.name-Cafe span:hover {
+    color: #c94949;
+}
+.price-Cafe{
+    margin-top: 4px;
+}
+.price-Cafe span {
+    font-size: 20px;
+    background-color: #c94343;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px 10px;
+    margin-left: 30px;
+    font-family: "Oswald", sans-serif;
+}
+
+.Buy-Cafe button {
+    padding: 7px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.Buy-Cafe button:hover {
+    background-color: #000000;
+    color: #ffffff;
+
+}
+
+.infor-cafe {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.icon-heart {
+    position: absolute;
+    top: 20px;
+    left: 28px;
+    background-color: #ffffff;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.icon-eye {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 20px;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    margin-right: 30px;
+    color: black;
+}
+.icon-heart:hover,
+.icon-eye:hover {
+    background-color: #db4949;
+}
+
+.col-sm-12 img {
+    width: 100%;
+    margin: 80px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 0 5px;
+}
+
+.nav a {
+    font-size: 25px;
+    padding: 0 5px;
+    font-weight: 600;
+    color: rgb(117, 94, 94);
+    background-color: #ECEAE3;
+}
+
+.nav a:hover {
+    color: black;
+}
+.nav-item:hover a{
+    text-decoration: none;
+}
+
+/* footer */
+  
+.single-widget ul li{
+    margin: 0 10px;
+}
+.widget-quick-sevices ul li a{
+    font-size: 14px;
+}
+.footer{
+  margin-top: 40px;
+  overflow: hidden;
+
+}
+
+
+
